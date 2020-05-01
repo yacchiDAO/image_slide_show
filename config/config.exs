@@ -13,7 +13,7 @@ config :image_slide_show, ImageSlideShowWeb.Endpoint,
   secret_key_base: "U/cQn5Y5yHrg3eQ5KnKyrhDAZCJhKLw23mDNIaByHXI1MLYJFu1nnDHkXNwPDwvy",
   render_errors: [view: ImageSlideShowWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: ImageSlideShow.PubSub,
-  live_view: [signing_salt: "fyIMD5D7"]
+  live_view: [signing_salt: "xYENC+vkd0B9I2Mi5qiNMiFgYrELbVWh"]
 
 # Configures Elixir's Logger
 config :logger, :console,

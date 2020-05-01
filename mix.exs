@@ -33,6 +33,9 @@ defmodule ImageSlideShow.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:phoenix_live_view, "~> 0.12.0", [env: :prod, hex: "phoenix_live_view", repo: "hexpm", optional: false]},
+      {:smallex, "~> 0.0"},  # <- add here
+      {:floki, ">= 0.0.0", only: :test},
       {:phoenix, "~> 1.5.1"},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},

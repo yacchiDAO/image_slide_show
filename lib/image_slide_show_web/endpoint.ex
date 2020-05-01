@@ -7,14 +7,15 @@ defmodule ImageSlideShowWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_image_slide_show_key",
-    signing_salt: "y3v43ULw"
+    signing_salt: "xYENC+vkd0B9I2Mi5qiNMiFgYrELbVWh"
   ]
 
   socket "/socket", ImageSlideShowWeb.UserSocket,
     websocket: true,
     longpoll: false
 
-  socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
+  # socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
+  socket "/live", Phoenix.LiveView.Socket, websocket: true
 
   # Serve at "/" the static files from "priv/static" directory.
   #

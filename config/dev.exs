@@ -49,6 +49,8 @@ config :image_slide_show, ImageSlideShowWeb.Endpoint,
 config :image_slide_show, ImageSlideShowWeb.Endpoint,
   live_reload: [
     patterns: [
+      ~r{lib/image_slide_show_web/live/.*(ex)$},  # <- add here
+      ~r{lib/image_slide_show_web/templates/.*(leex)$},  # <- add here
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/image_slide_show_web/(live|views)/.*(ex)$",
